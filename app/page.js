@@ -1,10 +1,10 @@
 import React from "react";
 
-const HomePage = () => {
+const HomePage = ({ children }) => {
   return (
     <html lang="en">
       <body>
-        <div>HomePage</div>
+        <div>{children}</div>
       </body>
     </html>
   );

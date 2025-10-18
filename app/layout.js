@@ -1,10 +1,10 @@
 import React from "react";
 
-const MainLayout = () => {
+const MainLayout = ({ children }) => {
   return (
-    <html>
+    <html lang="en">
       <body>
-        <div>MainLayout</div>
+        <div>{children}</div>
       </body>
     </html>
   );
