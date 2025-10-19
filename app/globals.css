@@ -21,6 +21,22 @@
 
 body {
   background: var(--color-white);
-  color: var(--color-black);
+  color: var(--color-red);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.myDiv {
+  color: black;
+  background: white;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 12px;
+  transition: all 0.8s ease;
+}
+.myDiv:hover {
+  color: white;
+  background: black;
+  transition: all 0.8s ease;
 }
