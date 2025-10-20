@@ -1,11 +1,22 @@
-// import React from "react";
+import React from "react";
+import SlideArrowButton from "./components/animata/button/slide-arrow-button";
+import Link from "next/link";
 
 export const metadata = {
   title: "test",
+  description: "project for learning Next.js with Oreilly",
 };
 
 const HomePage = () => {
-  return <div>Home Page</div>;
+  console.log("root page.jsx file");
+  return (
+    <div className="flex flex-col w-full ">
+      <h1 className="text-3xl">welcome</h1>
+      <Link href="/users">
+        <SlideArrowButton text="Users Page"></SlideArrowButton>
+      </Link>
+    </div>
+  );
 };
 
 export default HomePage;

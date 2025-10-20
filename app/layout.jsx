@@ -1,5 +1,6 @@
 // import React from "react";
 import "./globals.css";
+import Navbar from "./components/Navbar";
 
 export const metadata = {
   title: "Learning Next.js with tailwindcss",
@@ -10,8 +11,9 @@ export const metadata = {
 const MainLayout = ({ children }) => {
   return (
     <html lang="en">
-      <body className="flex justify-center border-4 border-black h-dvh  ">
-        {children}
+      <body className=" ">
+        <Navbar></Navbar>
+        {/* <main>{children}</main> */}
       </body>
     </html>
   );
