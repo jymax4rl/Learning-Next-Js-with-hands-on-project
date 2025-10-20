@@ -11,9 +11,9 @@ export const metadata = {
 const MainLayout = ({ children }) => {
   return (
     <html lang="en">
-      <body className=" ">
+      <body className="min-h-screen bg-black ">
         <Navbar></Navbar>
-        {/* <main>{children}</main> */}
+        <main className="pt-24 min-h-screen">{children}</main>
       </body>
     </html>
   );

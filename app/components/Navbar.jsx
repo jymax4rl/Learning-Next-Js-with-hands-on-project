@@ -10,7 +10,7 @@ const Navbar = () => {
     document.getElementById("hamburger").classList.toggle("active");
   };
   return (
-    <nav className="fixed  h-24 w-full shadow-2xs bg-white ">
+    <nav className="fixed top-0  h-24 w-full shadow-2xs bg-white ">
       <div className="flex justify-between items-center h-full w-full px-4 2xl:pr-0 2xl:pl-16 ">
         <Link href="/">
           <Image
@@ -24,28 +24,28 @@ const Navbar = () => {
         {/* start of nav links for wide screens */}
         <div className=" navbar h-full hidden sm:flex items-center">
           <Link
-            class="nav-link nav-link-ltr h-full flex justify-center items-center"
-            href="#"
+            className="nav-link nav-link-ltr h-full flex justify-center items-center"
+            href="/"
           >
             Home
           </Link>
           <Link
-            class="nav-link nav-link-ltr h-full  flex justify-center  items-center"
+            className="nav-link nav-link-ltr h-full  flex justify-center  items-center"
             href="#"
           >
             About
           </Link>
           <Link
-            class="nav-link nav-link-ltr h-full  flex justify-center items-center"
-            href="#"
+            className="nav-link nav-link-ltr h-full  flex justify-center items-center"
+            href="/properties"
           >
-            Contact
+            Properties
           </Link>
           <Link
-            class="nav-link nav-link-ltr h-full  flex justify-center items-center"
-            href="#"
+            className="nav-link nav-link-ltr h-full  flex justify-center items-center"
+            href="/properties/add"
           >
-            Blog
+            Add Property
           </Link>
         </div>
         {/* 
@@ -57,7 +57,7 @@ Start of hamburger for mobile
           onClick={hamburgerToggle}
         >
           <svg width="75" height="75" viewBox="0 0 200 200">
-            <g stroke-width="2" stroke-linecap="round">
+            <g strokeWidth="2" strokeLinecap="round">
               <path
                 d="M72 82.286h28.75"
                 fill="black"
@@ -72,7 +72,7 @@ Start of hamburger for mobile
               <path
                 d="M72 125.143h28.75"
                 fill="#009100"
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 stroke="black"
               />
               <path
@@ -83,13 +83,13 @@ Start of hamburger for mobile
               <path
                 d="M100.75 82.286h28.75"
                 fill="#009100"
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 stroke="black"
               />
               <path
                 d="M100.75 125.143h28.75"
                 fill="#009100"
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 stroke="black"
               />
             </g>

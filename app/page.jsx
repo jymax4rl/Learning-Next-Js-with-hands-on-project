@@ -10,7 +10,7 @@ export const metadata = {
 const HomePage = () => {
   console.log("root page.jsx file");
   return (
-    <div className="flex flex-col w-full ">
+    <div className="h-min-full bg-amber-300 border-2 flex flex-col w-full ">
       <h1 className="text-3xl">welcome</h1>
       <Link href="/users">
         <SlideArrowButton text="Users Page"></SlideArrowButton>
