@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "../public/ankhLogoWhiteBg.png";
+import Logo from "../public/blackAnkhLogo.png";
 
 const Navbar = () => {
   const hamburgerToggle = () => {
@@ -10,8 +10,8 @@ const Navbar = () => {
     document.getElementById("hamburger").classList.toggle("active");
   };
   return (
-    <nav className="fixed  h-24 w-full shadow-xl bg-white">
-      <div className="flex justify-between items-center h-full w-full px-4 2xl:px-16">
+    <nav className="fixed  h-24 w-full shadow-2xs bg-white ">
+      <div className="flex justify-between items-center h-full w-full px-4 2xl:pr-0 2xl:pl-16 ">
         <Link href="/">
           <Image
             src={Logo}
@@ -21,10 +21,39 @@ const Navbar = () => {
             className="cursor-pointer"
           />
         </Link>
-
+        {/* start of nav links for wide screens */}
+        <div className="navbar h-full flex items-center">
+          <a
+            class="nav-link nav-link-ltr h-full flex justify-center items-center"
+            href="#"
+          >
+            Home
+          </a>
+          <a
+            class="nav-link nav-link-ltr h-full  flex justify-center  items-center"
+            href="#"
+          >
+            About
+          </a>
+          <a
+            class="nav-link nav-link-ltr h-full  flex justify-center items-center"
+            href="#"
+          >
+            Contact
+          </a>
+          <a
+            class="nav-link nav-link-ltr h-full  flex justify-center items-center"
+            href="#"
+          >
+            Blog
+          </a>
+        </div>
+        {/* 
+Start of hamburger for mobile
+*/}
         <div
           id="hamburger"
-          className="hamburger cursor-pointer"
+          className="hamburger cursor-pointer  sm:hidden"
           onClick={hamburgerToggle}
         >
           <svg width="75" height="75" viewBox="0 0 200 200">
@@ -32,7 +61,7 @@ const Navbar = () => {
               <path
                 d="M72 82.286h28.75"
                 fill="black"
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 stroke="black"
               />
               <path
@@ -66,6 +95,7 @@ const Navbar = () => {
             </g>
           </svg>
         </div>
+        {/* end of hamburger for mobile*/}
       </div>
     </nav>
   );

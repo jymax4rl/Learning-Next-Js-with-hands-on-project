@@ -92,3 +92,44 @@ path:nth-child(6) {
 .active path:nth-child(6) {
   transform: translateX(9px) translateY(1px) rotate(45deg);
 }
+
+/* end of hamburger css + animation*/
+
+/*nav link css hover effect*/
+.navbar {
+  /* border-bottom: 1px solid #bbbbbb; */
+}
+
+.nav-link {
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #1e1e1fc7;
+  /* padding: 10px; */
+  width: 10rem;
+  /* display: inline-block; */
+  position: relative;
+  opacity: 0.75;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+.nav-link::before {
+  transition: 300ms;
+  height: 1px;
+  content: "";
+  position: absolute;
+  background-color: #000000;
+}
+
+.nav-link-ltr::before {
+  width: 0%;
+  bottom: 0px;
+}
+
+.nav-link-ltr:hover::before {
+  width: 100%;
+}
