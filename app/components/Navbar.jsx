@@ -22,7 +22,7 @@ const Navbar = () => {
           />
         </Link>
         {/* start of nav links for wide screens */}
-        <div className="navbar h-full flex items-center">
+        <div className=" navbar h-full hidden sm:flex items-center">
           <a
             class="nav-link nav-link-ltr h-full flex justify-center items-center"
             href="#"
