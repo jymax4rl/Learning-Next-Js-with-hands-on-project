@@ -23,30 +23,30 @@ const Navbar = () => {
         </Link>
         {/* start of nav links for wide screens */}
         <div className=" navbar h-full hidden sm:flex items-center">
-          <a
+          <Link
             class="nav-link nav-link-ltr h-full flex justify-center items-center"
             href="#"
           >
             Home
-          </a>
-          <a
+          </Link>
+          <Link
             class="nav-link nav-link-ltr h-full  flex justify-center  items-center"
             href="#"
           >
             About
-          </a>
-          <a
+          </Link>
+          <Link
             class="nav-link nav-link-ltr h-full  flex justify-center items-center"
             href="#"
           >
             Contact
-          </a>
-          <a
+          </Link>
+          <Link
             class="nav-link nav-link-ltr h-full  flex justify-center items-center"
             href="#"
           >
             Blog
-          </a>
+          </Link>
         </div>
         {/* 
 Start of hamburger for mobile
