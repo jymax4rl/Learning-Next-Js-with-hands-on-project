@@ -1,13 +1,18 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "../public/blackAnkhLogo.png";
 
 const Navbar = () => {
+  // hamburger toggle
   const hamburgerToggle = () => {
     console.log("clicked the hamburger");
     document.getElementById("hamburger").classList.toggle("active");
+  };
+
+  const slidePropertiesSection = () => {
+    document.getElementById("propertiesNavMenu").classList.toggle("slideUp");
   };
   return (
     <>
@@ -37,14 +42,18 @@ const Navbar = () => {
               About
             </Link>
             <Link
-              className="nav-link nav-link-ltr h-full  flex justify-center items-center"
+              className={`nav-link nav-link-ltr h-full  flex justify-center items-center`}
+              // className="nav-link nav-link-ltr h-full  flex justify-center items-center"
               href="/properties"
             >
               Properties
             </Link>
             <Link
-              className="nav-link nav-link-ltr h-full  flex justify-center items-center"
+              id="propertiesNav"
+              className={`propertiesNavBtn nav-link nav-link-ltr h-full  flex justify-center items-center`}
+              // className="propertiesNavBtn nav-link nav-link-ltr h-full  flex justify-center items-center"
               href="/properties/add"
+              onClick={slidePropertiesSection}
             >
               Add Property
             </Link>
@@ -101,7 +110,10 @@ Start of hamburger for mobile
       </nav>
 
       {/* dropped down menu design, to expand when hovering a nav link */}
-      <div className="rounded-3xl h-3/4 text-amber-50 bg-black w-3/4 fixed top-24 right-0 grid grid-cols-2 grid-rows-2">
+      <div
+        id="propertiesNavMenu"
+        className="propertiesNavMenu rounded-3xl h-3/4 text-amber-50 bg-black w-3/4 fixed top-24 right-0 grid grid-cols-2 grid-rows-2"
+      >
         <div className="rounded-3xl transition-all flex items-center justify-center  hover:bg-blue-950 ease-in-out">
           Paris
         </div>

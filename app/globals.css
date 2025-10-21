@@ -98,6 +98,7 @@ path:nth-child(6) {
 /*nav link css hover effect*/
 .navbar {
   /* border-bottom: 1px solid #bbbbbb; */
+  z-index: 10;
 }
 
 .nav-link {
@@ -132,4 +133,18 @@ path:nth-child(6) {
 
 .nav-link-ltr:hover::before {
   width: 100%;
+}
+
+/*slide up animation for properties nav menu*/
+.propertiesNavMenu {
+  transform: translateY(-124%);
+  opacity: 0.7;
+  transition: all 0.3s ease-in-out;
+  z-index: -1 !important;
+}
+.slideUp {
+  transform: translateY(0%);
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+  z-index: -1 !important;
 }
