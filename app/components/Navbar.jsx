@@ -16,7 +16,7 @@ const Navbar = () => {
   };
   return (
     <>
-      <nav className="fixed top-0  h-24 w-full shadow-2xs bg-white ">
+      <nav className="navbar fixed top-0  h-24 w-full shadow-2xs bg-white ">
         <div className="flex justify-between items-center h-full w-full px-4 2xl:pr-0 2xl:pl-16 ">
           <Link href="/">
             <Image
@@ -114,12 +114,18 @@ Start of hamburger for mobile
         id="propertiesNavMenu"
         className="propertiesNavMenu rounded-3xl h-3/4 text-amber-50 bg-black w-3/4 fixed top-24 right-0 grid grid-cols-2 grid-rows-2"
       >
-        <div className="rounded-3xl transition-all flex items-center justify-center  hover:bg-blue-950 ease-in-out">
+        <div className="cursor-pointer rounded-3xl transition-all flex items-center justify-center  hover:bg-blue-950 ease-in-out">
           Paris
         </div>
-        <div className="flex items-center justify-center">Paris</div>
-        <div className="flex items-center justify-center">Paris</div>
-        <div className="flex items-center justify-center">Paris</div>
+        <div className="cursor-pointer flex items-center justify-center">
+          Paris
+        </div>
+        <div className="cursor-pointer flex items-center justify-center">
+          Paris
+        </div>
+        <div className="cursor-pointer flex items-center justify-center">
+          Paris
+        </div>
       </div>
     </>
   );
