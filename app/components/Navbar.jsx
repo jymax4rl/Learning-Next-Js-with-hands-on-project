@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "../public/blackAnkhLogo.png";
-
+import { DotPattern } from "./DotPattern";
 const Navbar = () => {
   // hamburger toggle
   const hamburgerToggle = () => {
@@ -112,10 +112,11 @@ Start of hamburger for mobile
       {/* dropped down menu design, to expand when hovering a nav link */}
       <div
         id="propertiesNavMenu"
-        className="propertiesNavMenu rounded-3xl h-3/4 text-amber-50 bg-black w-3/4 fixed top-24 right-0 grid grid-cols-2 grid-rows-2"
+        className="propertiesNavMenu  h-3/4 text-amber-50 bg-black w-3/4 fixed top-24 right-0 grid grid-cols-2 grid-rows-2"
       >
-        <div className="cursor-pointer rounded-3xl transition-all flex items-center justify-center  hover:bg-blue-950 ease-in-out">
+        <div className="cursor-pointer capitalize  transition-all relative items-center justify-center  hover:bg-blue-950 ease-in-out">
           Paris
+          <DotPattern className="  absolut -z-1 w-full h-full" glow={true} />
         </div>
         <div className="cursor-pointer flex items-center justify-center">
           Paris
@@ -123,8 +124,9 @@ Start of hamburger for mobile
         <div className="cursor-pointer flex items-center justify-center">
           Paris
         </div>
-        <div className="cursor-pointer flex items-center justify-center">
+        <div className="cursor-pointer relative items-center justify-center">
           Paris
+          <DotPattern className="  absolut -z-1 w-full h-full" glow={true} />
         </div>
       </div>
     </>
