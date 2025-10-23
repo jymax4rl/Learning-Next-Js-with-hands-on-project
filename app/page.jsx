@@ -15,6 +15,9 @@ const HomePage = () => {
       <Link href="/users">
         <SlideArrowButton text="Users Page"></SlideArrowButton>
       </Link>
+      <Link href="/reactEssentials">
+        <SlideArrowButton text="React Essentials"></SlideArrowButton>
+      </Link>
     </div>
   );
 };

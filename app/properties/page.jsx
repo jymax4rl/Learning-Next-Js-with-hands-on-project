@@ -11,7 +11,7 @@ const PropertiesPage = () => {
     { title: "Dakar Property", price: "800", address: "Senegal" },
   ]);
   return (
-    <div className="grid grid-cols-3 grid-rows-auto h-screen items-cents justify-center">
+    <div className="p-2.5 grid grid-cols-3 grid-rows-auto h-screen items-cents justify-center">
       {properties.map((property) => {
         return (
           <MyPropertiesPage
